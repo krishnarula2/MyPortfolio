@@ -211,8 +211,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Now-4fc3f7?style=for-the-badge&logo=react&logoColor=white)](https://krishnarula.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]((https://www.linkedin.com/in/krish-narula-b50724274/))
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:narulakrish2@gmail.com)
-
 </div> 
