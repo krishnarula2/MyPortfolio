@@ -1046,8 +1046,8 @@ section {
 }
 
 .image-placeholder {
-    width: 140px;
-    height: 140px;
+    width: 85px;
+    height: 85px;
     background: rgba(10, 15, 28, 0.5);
     border: 2px solid rgba(79, 195, 247, 0.3);
     border-radius: 50%;
@@ -1881,8 +1881,8 @@ section {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 25%; /* Much closer focus on face */
-    transform: scale(2.8); /* Much more zoom to show only face */
+    object-position: 70% 25%; /* Adjusted to match the attached image framing */
+    transform: scale(2.6); /* Increased zoom to match the tighter crop */
     border: 3px solid rgba(79, 195, 247, 0.4);
     box-shadow: 
         0 0 20px rgba(79, 195, 247, 0.3),
@@ -1895,7 +1895,7 @@ section {
     box-shadow: 
         0 0 30px rgba(79, 195, 247, 0.5),
         0 6px 20px rgba(0, 0, 0, 0.3);
-    transform: scale(2.9); /* Slight additional zoom on hover */
+    transform: scale(2.3); /* Subtle hover effect */
 }
 
 @keyframes helixBreathe {
