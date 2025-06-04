@@ -2174,7 +2174,8 @@ section {
 } 
 
 @keyframes techPulse {
-    display: none;
+    0% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 @keyframes dataFlow {
