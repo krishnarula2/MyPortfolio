@@ -355,6 +355,168 @@ body.scrolling::after {
     width: 10px;
     height: 10px;
     background: radial-gradient(circle, #ffffff 0%, #4fc3f7 50%, transparent 100%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: quantumPulse 2s ease-in-out infinite;
+    box-shadow: 
+        0 0 15px rgba(79, 195, 247, 1),
+        0 0 30px rgba(79, 195, 247, 0.6),
+        0 0 45px rgba(79, 195, 247, 0.3);
+}
+
+.dna-base::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px solid rgba(79, 195, 247, 0.4);
+    border-radius: 50%;
+    animation: energyRing 1.5s ease-in-out infinite;
+}
+
+.dna-base::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: outerRing 2.5s linear infinite reverse;
+}
+
+.base-1 { 
+    animation-delay: 0s; 
+    --x: 0px; --y: -20px;
+    transform: translate(-50%, -50%) translate(var(--x), var(--y));
+    filter: hue-rotate(0deg);
+}
+.base-2 { 
+    animation-delay: 0.15s; 
+    --x: 17px; --y: -10px;
+    transform: translate(-50%, -50%) translate(var(--x), var(--y));
+    filter: hue-rotate(30deg);
+}
+.base-3 { 
+    animation-delay: 0.3s; 
+    --x: 17px; --y: 10px;
+    transform: translate(-50%, -50%) translate(var(--x), var(--y));
+    filter: hue-rotate(60deg);
+}
+.base-4 { 
+    animation-delay: 0.45s; 
+    --x: 0px; --y: 20px;
+    transform: translate(-50%, -50%) translate(var(--x), var(--y));
+    filter: hue-rotate(90deg);
+}
+.base-5 { 
+    animation-delay: 0.6s; 
+    --x: -17px; --y: 10px;
+    transform: translate(-50%, -50%) translate(var(--x), var(--y));
+    filter: hue-rotate(120deg);
+}
+.base-6 { 
+    animation-delay: 0.75s; 
+    --x: -17px; --y: -10px;
+    transform: translate(-50%, -50%) translate(var(--x), var(--y));
+    filter: hue-rotate(150deg);
+}
+
+/* Advanced Futuristic Animation Keyframes */
+@keyframes systemBreath {
+    0%, 100% { 
+        transform: scale(1);
+        filter: brightness(100%) contrast(100%);
+    }
+    50% { 
+        transform: scale(1.03);
+        filter: brightness(110%) contrast(110%);
+    }
+}
+
+@keyframes advancedSpin {
+    0% { 
+        transform: rotate(0deg);
+        opacity: 1;
+        filter: brightness(100%);
+    }
+    25% {
+        opacity: 0.8;
+        filter: brightness(120%);
+    }
+    50% {
+        opacity: 0.9;
+        filter: brightness(90%);
+    }
+    75% {
+        opacity: 0.7;
+        filter: brightness(110%);
+    }
+    100% { 
+        transform: rotate(360deg);
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
+
+@keyframes quantumPulse {
+    0%, 100% { 
+        transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(1);
+        opacity: 0.7;
+        filter: brightness(100%);
+    }
+    25% {
+        transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(1.2);
+        opacity: 0.9;
+        filter: brightness(130%);
+    }
+    50% { 
+        transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(1.6);
+        opacity: 1;
+        filter: brightness(150%);
+    }
+    75% {
+        transform: translate(-50%, -50%) translate(var(--x), var(--y)) scale(1.3);
+        opacity: 0.8;
+        filter: brightness(120%);
+    }
+}
+
+@keyframes energyRing {
+    0%, 100% { 
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    50% { 
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+}
+
+@keyframes outerRing {
+    0% { 
+        transform: rotate(0deg) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: rotate(180deg) scale(1.1);
+        opacity: 0.6;
+    }
+    100% { 
+        transform: rotate(360deg) scale(1);
+        opacity: 0.3;
+    }
+}
+
+/* Central Tech Dots */
+.dna-base {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 8px;
     height: 8px;
     background: linear-gradient(45deg, #4fc3f7, #ffffff);
@@ -403,28 +565,13 @@ body.scrolling::after {
 
 /* Clean Tech Animation Keyframes */
 @keyframes modernSpin {
-    0% { 
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.7;
-    }
-    100% { 
-        transform: rotate(360deg);
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 @keyframes techPulse {
-    0%, 100% { 
-        transform: translate(-50%, -50%) translate(var(--x, 0px), var(--y, 0px)) scale(1);
-        opacity: 0.6;
-    }
-    50% { 
-        transform: translate(-50%, -50%) translate(var(--x, 0px), var(--y, 0px)) scale(1.4);
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 .loading-text {
@@ -2027,18 +2174,7 @@ section {
 } 
 
 @keyframes techPulse {
-    0% { 
-        transform: scale(1);
-        filter: brightness(100%);
-    }
-    50% { 
-        transform: scale(1.02);
-        filter: brightness(110%);
-    }
-    100% { 
-        transform: scale(1);
-        filter: brightness(100%);
-    }
+    display: none;
 }
 
 @keyframes dataFlow {
