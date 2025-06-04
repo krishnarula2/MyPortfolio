@@ -1,4 +1,4 @@
-// Loading Screen Animation - OPTIMIZED with longer duration
+// Loading Screen Animation - OPTIMIZED with shorter duration
 document.addEventListener('DOMContentLoaded', function() {
     const loadingScreen = document.getElementById('loadingScreen');
     const mainContent = document.getElementById('mainContent');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let progress = 0;
     const interval = setInterval(() => {
-        progress += Math.random() * 8; // Slower progress increments (was 15)
+        progress += Math.random() * 20; // Faster progress increments (was 8)
         if (progress > 100) progress = 100;
         
         if (progressBar) {
@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     // Start the name typing animation first
                     startNameTyping();
-                }, 500); // Slightly longer transition
-            }, 800); // Longer pause at 100%
+                }, 300); // Faster transition
+            }, 400); // Shorter pause at 100%
         }
-    }, 120); // Slower interval (was 80ms)
+    }, 60); // Much faster interval (was 120ms)
 });
 
 // Name Typing Animation (runs once on first load)
